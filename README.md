@@ -23,7 +23,7 @@ const API_URL = "http://localhost:3000";
 
 Todas las respuestas se entregan en formato JSON.
 
-Las respuestas con mensajes siguen esta estructura:
+Las respuestas con mensajes tienen esta estructura:
 
 ```json
 {
@@ -33,7 +33,7 @@ Las respuestas con mensajes siguen esta estructura:
 }
 ```
 
-Cuando un recurso no existe, la API responde con codigo `404` y un mensaje informativo. No devuelve arreglos vacios u objetos vacios con codigo `200`.
+Cuando un recurso no existe, la API responde con codigo `404` y un mensaje informativo. No devuelve arreglos ni objetos vacios con codigo `200`.
 
 
 
@@ -47,10 +47,8 @@ Cuando un recurso no existe, la API responde con codigo `404` y un mensaje infor
 ```text
 http://localhost:3000/
 http://localhost:3000/localidades
-http://localhost:3000/localidades/0602801008
-http://localhost:3000/localidades/06399040
-http://localhost:3000/localidades/buscar?nombre=Guamini
-http://localhost:3000/localidades/buscar?nombre=Malvinas
+http://localhost:3000/localidades/06147100
+http://localhost:3000/localidades/buscar?nombre=Merlo
 ```
 
 ## Codigos de estado utilizados
