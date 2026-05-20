@@ -14,8 +14,8 @@ const API_URL = "http://localhost:3000";
 [
   `GET ${API_URL}/`: "Documentacion de la API y listado de endpoints",
   `GET ${API_URL}/localidades`: "Lista completa de localidades",
-  `GET ${API_URL}/localidades/:id`: "Localidad por id, enviado como parametro de ruta",
-  `GET ${API_URL}/localidades/buscar?nombre=Guamini`: "Localidades por nombre, enviado como query parameter"
+  `GET ${API_URL}/localidades/:id`: "Localidad por id(Como parámetro de ruta)",
+  `GET ${API_URL}/localidades/buscar?nombre=texto`: "Buscar localidad por nombre (query param)"
 ]
 ```
 
@@ -40,7 +40,7 @@ Cuando un recurso no existe, la API responde con codigo `404` y un mensaje infor
 ## Parametros
 
 - `/localidades/:id`: recibe el `id` de una localidad por parametro de ruta.
-- `/localidades/buscar?nombre=Guamini`: recibe `nombre` por query parameter. La busqueda no distingue entre mayusculas, minusculas o tildes.
+- `/localidades/buscar?nombre=Merlo`: recibe `nombre` por query parameter. La busqueda no distingue entre mayusculas, minusculas o tildes.
 
 ## Rutas para probar
 
@@ -50,9 +50,3 @@ http://localhost:3000/localidades
 http://localhost:3000/localidades/06147100
 http://localhost:3000/localidades/buscar?nombre=Merlo
 ```
-
-## Codigos de estado utilizados
-
-- `200`: solicitud correcta.
-- `400`: faltan parametros requeridos.
-- `404`: recurso o ruta no encontrada.
